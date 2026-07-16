@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Services | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="Comprehensive dental services in Austin, TX. General dentistry, cosmetic dentistry, dental implants, Invisalign, emergency care, and children's dentistry at Riverside Family Dentistry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+  <style>
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .svc-card { background: var(--white); border-radius: 20px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 12px rgba(44,96,136,0.05); transition: box-shadow 0.2s, transform 0.2s; }
+    .svc-card:hover { box-shadow: 0 12px 36px rgba(44,96,136,0.12); transform: translateY(-4px); }
+    .svc-img { height: 220px; overflow: hidden; }
+    .svc-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+    .svc-card:hover .svc-img img { transform: scale(1.04); }
+    .svc-body { padding: 26px; }
+    .svc-name { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--blue-dark); margin-bottom: 10px; }
+    .svc-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.68; margin-bottom: 18px; }
+    .svc-link { font-size: 0.85rem; font-weight: 700; color: var(--green); display: flex; align-items: center; gap: 5px; }
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) { .services-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+<div class="topbar">
+  <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm</span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg></div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="../about/">About</a>
+    <a href="index.html" class="active">Services</a>
+    <a href="../new-patients/">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="../contact/">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> / Services</div>
+  <div class="page-hero-tag">Comprehensive Dental Care</div>
+  <h1>Everything your family needs.<br>All in one place.</h1>
+  <p>From routine cleanings to full smile transformations, Riverside Family Dentistry offers complete dental care for every stage of life at our South Austin practice.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <span class="sec-label">Our Services</span>
+  <h2 class="sec-h2">Dental care designed around your life.</h2>
+  <p class="sec-p">We handle everything in-house so your family never has to be referred elsewhere for routine care. Every service is delivered by Dr. Mitchell or Dr. Carter, the same doctors you see at every visit.</p>
+  <div class="services-grid">
+    <div class="svc-card">
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="General and family dentistry Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">General &amp; Family Dentistry</div>
+        <p class="svc-desc">Routine exams, cleanings, X-rays, fillings, and preventive care for patients of all ages. The foundation of a lifetime of healthy smiles for your whole family.</p>
+        <a href="general-dentistry.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-img"><img src="../assets/images/Cosmetic_1.jpg" alt="Cosmetic dentistry beautiful smile Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">Cosmetic Dentistry</div>
+        <p class="svc-desc">Teeth whitening, porcelain veneers, dental bonding, and complete smile makeovers. Look your very best and feel confident about your smile every day.</p>
+        <a href="cosmetic-dentistry.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-img"><img src="../assets/images/Implants_1.jpg" alt="Dental implants treatment Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">Dental Implants</div>
+        <p class="svc-desc">Permanent, natural-looking tooth replacement that restores your bite, your appearance, and your confidence. The gold standard for missing teeth.</p>
+        <a href="dental-implants.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=600&q=80" alt="Invisalign clear aligners Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">Invisalign &amp; Clear Aligners</div>
+        <p class="svc-desc">Straighten your teeth discreetly without metal brackets or wires. Invisalign fits your lifestyle and delivers results you can see from the very first month.</p>
+        <a href="invisalign.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-img"><img src="https://images.unsplash.com/photo-1571772996211-2f02c9727629?auto=format&fit=crop&w=600&q=80" alt="Emergency dental care Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">Emergency Dental Care</div>
+        <p class="svc-desc">Toothaches, broken teeth, lost crowns, and dental injuries need immediate attention. We reserve same-day emergency appointments for patients in pain. Call us first.</p>
+        <a href="emergency-dental-care.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+    <div class="svc-card">
+      <div class="svc-img"><img src="../assets/images/childrens_photo.jpg" alt="Child smiling at dentist Riverside Family Dentistry Austin TX"></div>
+      <div class="svc-body">
+        <div class="svc-name">Children's Dentistry</div>
+        <p class="svc-desc">Gentle, friendly dental care that makes children feel safe and builds healthy habits from the very first visit. We love treating the whole family across every age.</p>
+        <a href="childrens-dentistry.html" class="svc-link">Learn more &#8594;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Not sure which service you need?</h2>
+  <p>Book a comprehensive exam and Dr. Mitchell or Dr. Carter will walk you through exactly what they recommend and why. No pressure, no surprises.</p>
+  <div class="cta-band-btns">
+    <a href="../contact/" class="btn-green">Book an Exam</a>
+    <a href="tel:5129742000" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">(512) 974-2000</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="general-dentistry.html">General Dentistry</a></li>
+      <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="dental-implants.html">Dental Implants</a></li>
+      <li><a href="invisalign.html">Invisalign</a></li>
+      <li><a href="emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="../about/">About Us</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../contact/">Contact</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4820 Riverside Drive, Suite 200</li>
+      <li>Austin, TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>

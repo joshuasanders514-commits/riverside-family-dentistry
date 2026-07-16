@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Patients | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="New to Riverside Family Dentistry in Austin, TX? Here is everything you need to know before your first visit. Book your appointment online today.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .np-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .np-steps { display: flex; flex-direction: column; gap: 0; }
+    .np-step { display: flex; gap: 18px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid var(--border); }
+    .np-step:last-child { border-bottom: none; }
+    .np-step-num { width: 44px; height: 44px; background: var(--green); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--white); flex-shrink: 0; }
+    .np-step-title { font-size: 1rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 5px; }
+    .np-step-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.68; }
+    .np-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-card { background: var(--alt); border-radius: 16px; padding: 24px; border: 1px solid var(--border); }
+    .sidebar-card-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--blue-dark); margin-bottom: 12px; }
+    .sidebar-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.68; margin-bottom: 10px; }
+    .sidebar-card p:last-child { margin-bottom: 0; }
+    .special-card { background: var(--blue-dark); border-radius: 16px; padding: 24px; }
+    .special-card-label { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 8px; }
+    .special-card-title { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--white); margin-bottom: 8px; }
+    .special-card p { font-size: 0.84rem; color: rgba(255,255,255,0.6); line-height: 1.65; margin-bottom: 16px; }
+    .bring-list { display: flex; flex-direction: column; gap: 10px; }
+    .bring-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.88rem; color: var(--muted); line-height: 1.5; }
+    .bring-check { width: 22px; height: 22px; background: var(--green-lt); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--green); margin-top: 1px; }
+    .faq-section { background: var(--alt); padding: 72px 5%; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .faq-item { background: var(--white); border-radius: 14px; padding: 22px; border: 1px solid var(--border); }
+    .faq-q { font-size: 0.97rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 10px; }
+    .faq-a { font-size: 0.85rem; color: var(--muted); line-height: 1.68; }
+    .form-section { background: var(--white); padding: 72px 5%; }
+    .form-inner { background: var(--alt); border-radius: 20px; padding: 48px; max-width: 700px; margin: 0 auto; }
+    .form-title { font-family: 'DM Serif Display', serif; font-size: 1.8rem; color: var(--blue-dark); margin-bottom: 6px; }
+    .form-sub { font-size: 0.88rem; color: var(--muted); margin-bottom: 28px; line-height: 1.6; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { display: flex; flex-direction: column; gap: 5px; }
+    .fg.full { grid-column: 1 / -1; }
+    .fg label { font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+    .fg input, .fg select, .fg textarea {
+      padding: 11px 14px; border-radius: 10px; border: 1.5px solid var(--border);
+      background: var(--white); font-family: 'Nunito', sans-serif; font-size: 0.88rem;
+      color: var(--text); outline: none; transition: border-color 0.2s; width: 100%;
+    }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--blue); }
+    .fg input::placeholder, .fg textarea::placeholder { color: #B0BEC5; }
+    .fg textarea { resize: vertical; min-height: 88px; }
+    .form-submit { width: 100%; background: var(--green); color: var(--white); font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 700; padding: 14px; border-radius: 100px; border: none; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .form-submit:hover { background: #3D9E70; }
+    .form-note { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 10px; }
+    @media (max-width: 1024px) { .np-grid { grid-template-columns: 1fr; } .faq-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .form-grid { grid-template-columns: 1fr; } .form-inner { padding: 28px; } }
+  </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">
+  <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm</span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg></div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="../about/">About</a>
+    <a href="../services/">Services</a>
+    <a href="index.html" class="active">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="../contact/">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> / New Patients</div>
+  <div class="page-hero-tag">New Patients Welcome</div>
+  <h1>Your first visit at Riverside.<br>Here is exactly what to expect.</h1>
+  <p>We know that visiting a new dentist can feel overwhelming. We have made the process as simple and transparent as possible so you can walk in feeling calm and confident.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="np-grid">
+    <div>
+      <span class="sec-label">Your First Visit</span>
+      <h2 class="sec-h2">Four simple steps from first call to healthy smile.</h2>
+      <div class="np-steps">
+        <div class="np-step">
+          <div class="np-step-num">1</div>
+          <div>
+            <div class="np-step-title">Schedule Your Appointment</div>
+            <p class="np-step-desc">Book online through our website any time, day or night, or call us at (512) 974-2000 during office hours. We typically have same-week availability for new patients, and we will confirm your appointment within one business day.</p>
+          </div>
+        </div>
+        <div class="np-step">
+          <div class="np-step-num">2</div>
+          <div>
+            <div class="np-step-title">Complete Your Intake Forms Online</div>
+            <p class="np-step-desc">After booking, we will send you a link to complete your new patient intake forms before you arrive. This includes your health history, insurance information, and consent forms. Doing this ahead of time means no paperwork in the waiting room and a faster, smoother first visit.</p>
+          </div>
+        </div>
+        <div class="np-step">
+          <div class="np-step-num">3</div>
+          <div>
+            <div class="np-step-title">Arrive and Meet Your Care Team</div>
+            <p class="np-step-desc">We ask that new patients arrive about 10 minutes early for their first visit. You will be greeted at the front desk, introduced to your hygienist, and have a few minutes to get comfortable before your appointment begins. There is no rush. We want you to feel completely at ease.</p>
+          </div>
+        </div>
+        <div class="np-step">
+          <div class="np-step-num">4</div>
+          <div>
+            <div class="np-step-title">Your Comprehensive New Patient Exam</div>
+            <p class="np-step-desc">Your first appointment includes a comprehensive dental exam with Dr. Mitchell or Dr. Carter, a full set of digital X-rays, and a professional cleaning. Before you leave, we will review everything we found, explain any recommended treatment clearly and without pressure, and answer every question you have.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="np-sidebar">
+      <div class="special-card">
+        <div class="special-card-label">New Patient Special</div>
+        <div class="special-card-title">$99 Exam, X-Rays &amp; Cleaning</div>
+        <p>Includes your comprehensive new patient exam, full digital X-rays, and a professional cleaning. Available for new patients without dental insurance.</p>
+        <a href="#book" class="btn-green">Claim This Offer</a>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">What to Bring</div>
+        <div class="bring-list">
+          <div class="bring-item">
+            <div class="bring-check"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Valid photo ID (driver's license or passport)
+          </div>
+          <div class="bring-item">
+            <div class="bring-check"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Your dental insurance card
+          </div>
+          <div class="bring-item">
+            <div class="bring-check"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            A list of any current medications
+          </div>
+          <div class="bring-item">
+            <div class="bring-check"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Previous dental X-rays if available
+          </div>
+          <div class="bring-item">
+            <div class="bring-check"><svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            Any concerns or questions written down
+          </div>
+        </div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Have Dental Anxiety?</div>
+        <p>You are not alone. A significant number of adults experience some level of anxiety about dental visits. We offer nitrous oxide sedation and take all the time you need to feel comfortable. Just let us know when you book and we will prepare accordingly.</p>
+        <p>Dr. Carter and Dr. Mitchell are both experienced working with anxious patients. We never rush, we always explain, and we never make you feel embarrassed about your concerns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <span class="sec-label">Common Questions</span>
+  <h2 class="sec-h2">Everything new patients usually ask us.</h2>
+  <p class="sec-p" style="margin-bottom:44px;">If you have a question that is not answered here, just call us at (512) 974-2000 and we will be happy to help.</p>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">How long will my first appointment take?</div>
+      <p class="faq-a">Your first visit typically takes about 90 minutes. This includes the comprehensive exam, digital X-rays, and a full cleaning. We schedule enough time so that nothing feels rushed.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you accept my insurance?</div>
+      <p class="faq-a">We accept most major dental insurance plans including Delta Dental, Cigna, Aetna, MetLife, Blue Cross Blue Shield, United Healthcare, Humana, and many others. Call us with your plan details and we will verify your coverage before your visit.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What if I don't have dental insurance?</div>
+      <p class="faq-a">We offer our new patient special ($99 exam, X-rays, and cleaning) for uninsured patients. We also offer CareCredit and Sunbit financing, plus our in-house wellness plan starting at $29 per month.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I bring my whole family?</div>
+      <p class="faq-a">Absolutely. We welcome patients of all ages, from children having their first dental visit to seniors. We can often schedule family members back to back to minimize the number of trips to the office.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What happens if I need additional treatment?</div>
+      <p class="faq-a">After your exam, your doctor will review any findings with you and present a clear treatment plan. We never pressure anyone to proceed with additional treatment immediately. You will have time to ask questions, think it over, and decide what is right for you.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I cancel or reschedule my appointment?</div>
+      <p class="faq-a">We ask for at least 24 hours notice for cancellations or rescheduling. You can call us at (512) 974-2000 or reply to your appointment confirmation. We understand that life happens and we work hard to accommodate schedule changes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="form-section" id="book">
+  <div class="form-inner">
+    <div class="form-title">Request Your First Appointment</div>
+    <p class="form-sub">Fill out the form below and our team will call you within one business day to confirm your appointment time and answer any questions.</p>
+    <form action="https://usebasin.com/f/c9396bad8f2e" method="POST">
+    <input type="hidden" name="_subject" value="New Patient Appointment Request">
+    <div class="form-grid">
+      <div class="fg"><label>First Name</label><input type="text" name="first_name" placeholder="James" required></div>
+      <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required></div>
+      <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(512) 000-0000" required></div>
+      <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="james@email.com" required></div>
+      <div class="fg"><label>Date of Birth</label><input type="text" name="date_of_birth" placeholder="MM / DD / YYYY"></div>
+      <div class="fg">
+        <label>Insurance Provider</label>
+        <select name="insurance">
+          <option value="" disabled selected>Select your insurance</option>
+          <option>Delta Dental</option>
+          <option>Cigna</option>
+          <option>Aetna</option>
+          <option>MetLife</option>
+          <option>Blue Cross Blue Shield</option>
+          <option>United Healthcare</option>
+          <option>No Insurance</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Preferred Appointment Day</label>
+        <select name="preferred_day">
+          <option value="" disabled selected>Select preference</option>
+          <option>Monday</option>
+          <option>Tuesday</option>
+          <option>Wednesday</option>
+          <option>Thursday</option>
+          <option>Friday</option>
+          <option>Saturday (by appointment)</option>
+          <option>No preference</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label>Preferred Time</label>
+        <select name="preferred_time">
+          <option value="" disabled selected>Select preference</option>
+          <option>Morning (8am to 12pm)</option>
+          <option>Afternoon (12pm to 5pm)</option>
+          <option>No preference</option>
+        </select>
+      </div>
+      <div class="fg full"><label>Dental concerns or questions</label><textarea name="message" placeholder="Tell us about any dental concerns, previous issues, anxiety, or anything else we should know before your visit..."></textarea></div>
+    </div>
+    <button type="submit" class="form-submit">Request My New Patient Appointment</button>
+    </form>
+    <div class="form-note">We will call you within one business day. Your information is kept completely private and is never shared.</div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Questions before you book?</h2>
+  <p>Our team is happy to answer any questions by phone. We are friendly, we do not pressure, and we love helping new patients find their way to us.</p>
+  <div class="cta-band-btns">
+    <a href="tel:5129742000" class="btn-green">(512) 974-2000</a>
+    <a href="../contact/" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">Get Directions</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin. Now accepting new patients.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="../services/general-dentistry.html">General Dentistry</a></li>
+      <li><a href="../services/cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="../services/dental-implants.html">Dental Implants</a></li>
+      <li><a href="../services/invisalign.html">Invisalign</a></li>
+      <li><a href="../services/emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="../services/childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="../about/">Meet Dr. Mitchell</a></li>
+      <li><a href="../about/">Meet Dr. Carter</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../index.html#insurance">Insurance &amp; Financing</a></li>
+      <li><a href="../index.html#reviews">Patient Reviews</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4410 E. Riverside Drive</li>
+      <li>Suite 200, Austin TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>

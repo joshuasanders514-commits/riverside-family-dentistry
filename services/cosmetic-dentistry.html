@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmetic Dentistry | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="Cosmetic dentistry in Austin, TX. Teeth whitening, porcelain veneers, dental bonding, and smile makeovers from Dr. Mitchell at Riverside Family Dentistry.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .service-layout { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start; }
+    .service-img { border-radius: 20px; overflow: hidden; height: 380px; margin-bottom: 32px; }
+    .service-img img { width: 100%; height: 100%; object-fit: cover; }
+    .service-body h3 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--blue-dark); margin: 28px 0 12px; }
+    .service-body p { font-size: 0.92rem; color: var(--muted); line-height: 1.78; margin-bottom: 14px; }
+    .service-list { display: flex; flex-direction: column; gap: 10px; margin: 12px 0 20px; }
+    .service-list-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+    .service-list-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 8px; }
+    .sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 90px; }
+    .sidebar-card { background: var(--alt); border-radius: 16px; padding: 22px; border: 1px solid var(--border); }
+    .sidebar-card-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--blue-dark); margin-bottom: 10px; }
+    .sidebar-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.65; margin-bottom: 12px; }
+    .sidebar-cta { background: var(--blue-dark); border-radius: 16px; padding: 24px; }
+    .sidebar-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--white); margin-bottom: 8px; }
+    .sidebar-cta p { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 16px; line-height: 1.6; }
+    .sidebar-cta .btn-green { width: 100%; text-align: center; display: block; }
+    .sidebar-phone { text-align: center; font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 10px; }
+    .faq-section { background: var(--alt); padding: 72px 5%; }
+    .faq-items { display: flex; flex-direction: column; gap: 16px; max-width: 720px; }
+    .faq-item { background: var(--white); border-radius: 14px; padding: 22px; border: 1px solid var(--border); }
+    .faq-q { font-size: 1rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 8px; }
+    .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.68; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: var(--white); border-radius: 14px; padding: 20px; border: 1px solid var(--border); }
+    .related-name { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--blue-dark); margin-bottom: 6px; }
+    .related-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
+    .related-link { font-size: 0.8rem; font-weight: 700; color: var(--green); }
+    @media (max-width: 1024px) { .service-layout { grid-template-columns: 1fr; } .sidebar { position: static; } .related-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
+  </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">
+  <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm</span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg></div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="../about/">About</a>
+    <a href="../services/">Services</a>
+    <a href="../new-patients/">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="../contact/">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Services</a> / Cosmetic Dentistry</div>
+  <div class="page-hero-tag">Smile Transformation</div>
+  <h1>A smile you are proud to share.</h1>
+  <p>Whether you want to whiten, reshape, or completely transform your smile, Dr. Mitchell at Riverside Family Dentistry offers a full range of cosmetic dental treatments tailored to your goals and budget.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="service-layout">
+    <div class="service-body">
+      <div class="service-img">
+        <img src="../assets/images/Cosmetic_1.jpg" alt="Cosmetic Dentistry Austin TX Riverside Family Dentistry">
+      </div>
+      <span class="sec-label">Overview</span>
+      <h2 class="sec-h2" style="margin-bottom:16px;">A smile you are proud to share.</h2>
+      <p>Cosmetic dentistry is about more than aesthetics. It is about how you feel when you walk into a room, when you smile in a photo, and when you look in the mirror. Dr. Mitchell has extensive advanced training in cosmetic dentistry and takes a conservative, personalized approach, recommending only what you genuinely need to achieve the result you want. We never oversell, and we never rush a cosmetic case.</p>
+      <div class="service-list">
+        <div class='service-list-item'>Professional teeth whitening (in-office and take-home)</div><div class='service-list-item'>Porcelain veneers for shape, size, and color</div><div class='service-list-item'>Dental bonding for chips and gaps</div><div class='service-list-item'>Tooth contouring and reshaping</div><div class='service-list-item'>Full smile makeover planning and execution</div><div class='service-list-item'>Tooth-colored composite restorations</div><div class='service-list-item'>Gum contouring for a more balanced smile</div>
+      </div>
+      <h3>What is the difference between veneers and bonding?</h3>
+      <p>Dental bonding uses a tooth-colored composite resin applied directly to the tooth and shaped by hand. It is a faster, less expensive option for chips, small gaps, and minor color issues. Porcelain veneers are thin shells of ceramic custom-made in a lab and permanently bonded to the front of your teeth. They last longer, are more stain-resistant, and produce a more dramatic result for significant smile changes. Dr. Mitchell will walk you through which option makes more sense for your specific goals.</p>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-cta">
+        <h3>Ready to get started?</h3>
+        <p>Book an appointment with Dr. Mitchell or Dr. Carter. New patients are welcome and we typically have same-week availability.</p>
+        <a href="../contact/" class="btn-green">Book an Appointment</a>
+        <div class="sidebar-phone">(512) 974-2000</div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Most Insurance Accepted</div>
+        <p>We accept Delta Dental, Cigna, Aetna, MetLife, Blue Cross Blue Shield, United Healthcare, Humana, and many more. Call us to verify your specific coverage.</p>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Flexible Payment Options</div>
+        <p>We offer CareCredit and Sunbit financing so you can get the care you need today and pay over time. Our in-house wellness plan starts at Cosmetic Dentistry9 per month for patients without insurance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <span class="sec-label">Common Questions</span>
+  <h2 class="sec-h2" style="margin-bottom:32px;">Frequently asked questions about Cosmetic Dentistry.</h2>
+  <div class="faq-items">
+    <div class="faq-item">
+      <div class="faq-q">How long does teeth whitening last?</div>
+      <p class="faq-a">Professional whitening results typically last 12 to 24 months depending on your diet and lifestyle habits. Coffee, red wine, and tobacco will shorten the duration. We offer both in-office whitening for immediate results and custom take-home trays that you can use at your own pace. Many patients do a brief touch-up once a year to maintain their results.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Will cosmetic work look natural?</div>
+      <p class="faq-a">In the hands of an experienced cosmetic dentist, absolutely. Dr. Mitchell customizes every cosmetic case to match your natural tooth color, shape, and translucency. The goal is never a blinding white Hollywood result unless that is specifically what you want. Most patients want a smile that looks naturally healthy, and that is exactly what we aim to deliver.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does cosmetic dentistry hurt?</div>
+      <p class="faq-a">Most cosmetic procedures involve little to no discomfort. Whitening can cause temporary sensitivity in some patients. Veneers require a small amount of tooth preparation that is done under local anesthetic, so you will not feel anything during the procedure. We always discuss what to expect at your consultation appointment before you commit to any treatment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white);">
+  <span class="sec-label">Explore More Services</span>
+  <h2 class="sec-h2" style="margin-bottom:32px;">Other services we offer at Riverside.</h2>
+  <div class="related-grid">
+    <div class="related-card">
+      <div class="related-name">General &amp; Family Dentistry</div>
+      <p class="related-desc">Routine exams, cleanings, and preventive care for patients of all ages.</p>
+      <a href="general-dentistry.html" class="related-link">Learn more &#8594;</a>
+    </div>
+    <div class="related-card">
+      <div class="related-name">Cosmetic Dentistry</div>
+      <p class="related-desc">Whitening, veneers, bonding, and complete smile makeovers.</p>
+      <a href="cosmetic-dentistry.html" class="related-link">Learn more &#8594;</a>
+    </div>
+    <div class="related-card">
+      <div class="related-name">Emergency Dental Care</div>
+      <p class="related-desc">Same-day appointments for patients in pain. Call us first.</p>
+      <a href="emergency-dental-care.html" class="related-link">Learn more &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Questions about Cosmetic Dentistry?</h2>
+  <p>Call us or book online. Dr. Mitchell and Dr. Carter are happy to answer any questions before your appointment.</p>
+  <div class="cta-band-btns">
+    <a href="../contact/" class="btn-green">Book Your Appointment</a>
+    <a href="tel:5129742000" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">(512) 974-2000</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin. Now accepting new patients.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="general-dentistry.html">General Dentistry</a></li>
+      <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="dental-implants.html">Dental Implants</a></li>
+      <li><a href="invisalign.html">Invisalign</a></li>
+      <li><a href="emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="../about/">Meet Dr. Mitchell</a></li>
+      <li><a href="../about/">Meet Dr. Carter</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../index.html#insurance">Insurance &amp; Financing</a></li>
+      <li><a href="../index.html#reviews">Patient Reviews</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4410 E. Riverside Drive</li>
+      <li>Suite 200, Austin TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>

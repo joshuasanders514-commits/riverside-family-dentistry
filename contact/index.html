@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="Contact Riverside Family Dentistry in Austin, TX. Call (512) 974-2000 or book online. Located at 4820 Riverside Drive, Suite 200, Austin TX 78741.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 20px; }
+    .contact-card { background: var(--alt); border-radius: 16px; padding: 24px; border: 1px solid var(--border); display: flex; gap: 16px; align-items: flex-start; }
+    .contact-card-icon { width: 44px; height: 44px; background: var(--blue-lt); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--blue); flex-shrink: 0; }
+    .contact-card-label { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--green); margin-bottom: 4px; }
+    .contact-card-val { font-size: 0.92rem; color: var(--text); font-weight: 600; line-height: 1.5; }
+    .contact-card-sub { font-size: 0.78rem; color: var(--muted); margin-top: 3px; line-height: 1.5; }
+    .hours-grid { display: flex; flex-direction: column; gap: 0; margin-top: 6px; }
+    .hours-row { display: flex; justify-content: space-between; align-items: center; font-size: 0.83rem; padding: 8px 0; border-bottom: 1px solid var(--border); gap: 16px; }
+    .hours-day { color: var(--text); font-weight: 600; min-width: 95px; flex-shrink: 0; }
+    .hours-time { color: var(--muted); text-align: right; }
+    .hours-time.closed { color: #E07070; }
+    .form-card { background: var(--white); border-radius: 20px; padding: 36px; border: 1px solid var(--border); box-shadow: 0 2px 16px rgba(44,96,136,0.06); }
+    .form-title { font-family: 'DM Serif Display', serif; font-size: 1.6rem; color: var(--blue-dark); margin-bottom: 6px; }
+    .form-sub { font-size: 0.85rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .fg { display: flex; flex-direction: column; gap: 5px; }
+    .fg.full { grid-column: 1 / -1; }
+    .fg label { font-size: 0.72rem; font-weight: 700; color: var(--muted); letter-spacing: 0.05em; text-transform: uppercase; }
+    .fg input, .fg select, .fg textarea { padding: 11px 14px; border-radius: 10px; border: 1.5px solid var(--border); background: var(--alt); font-family: 'Nunito', sans-serif; font-size: 0.88rem; color: var(--text); outline: none; transition: border-color 0.2s; width: 100%; }
+    .fg input:focus, .fg select:focus, .fg textarea:focus { border-color: var(--blue); }
+    .fg input::placeholder, .fg textarea::placeholder { color: #B0BEC5; }
+    .fg textarea { resize: vertical; min-height: 88px; }
+    .form-submit { width: 100%; background: var(--green); color: var(--white); font-family: 'Nunito', sans-serif; font-size: 0.95rem; font-weight: 700; padding: 14px; border-radius: 100px; border: none; cursor: pointer; margin-top: 8px; transition: background 0.2s; }
+    .form-submit:hover { background: #3D9E70; }
+    .form-note { font-size: 0.72rem; color: var(--muted); text-align: center; margin-top: 10px; }
+    .map-section { background: var(--alt); padding: 0; height: 380px; background: #C8D8DC; display: flex; align-items: center; justify-content: center; }
+    .map-inner { text-align: center; }
+    .map-pin-wrap { width: 56px; height: 56px; background: var(--blue); border-radius: 50% 50% 50% 0; transform: rotate(-45deg); margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 24px rgba(44,96,136,0.3); }
+    .map-pin-dot { width: 20px; height: 20px; background: var(--white); border-radius: 50%; transform: rotate(45deg); }
+    .map-name { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--blue-dark); margin-bottom: 4px; }
+    .map-addr { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+    @media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { .form-grid { grid-template-columns: 1fr; } .form-card { padding: 24px; } }
+  </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">
+  <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm</span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg></div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="../about/">About</a>
+    <a href="../services/">Services</a>
+    <a href="../new-patients/">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="index.html" class="active">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> / Contact</div>
+  <div class="page-hero-tag">Get in Touch</div>
+  <h1>We would love to<br>hear from you.</h1>
+  <p>Whether you have a question, need to book an appointment, or just want to find out if we accept your insurance, we are here to help.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <span class="sec-label">Contact Information</span>
+      <h2 class="sec-h2" style="margin-bottom:28px;">Find us, call us, or reach out online.</h2>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Our Address</div>
+          <div class="contact-card-val">4820 Riverside Drive, Suite 200<br>Austin, TX 78741</div>
+          <div class="contact-card-sub">Free parking available in our building lot. Accessible entrance on the ground level.</div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3-8.59A2 2 0 0 1 3.77 1.2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l1.12-1.12a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Phone</div>
+          <div class="contact-card-val">(512) 974-2000</div>
+          <div class="contact-card-sub">For emergencies after hours, please leave a voicemail and we will return your call as soon as possible.</div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-val">info@riversidefamilydentistry.com</div>
+          <div class="contact-card-sub">For non-urgent questions. We respond to all emails within one business day.</div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div>
+          <div class="contact-card-label">Office Hours</div>
+          <div class="hours-grid">
+            <div class="hours-row"><span class="hours-day">Monday</span><span class="hours-time">8:00am to 5:00pm</span></div>
+            <div class="hours-row"><span class="hours-day">Tuesday</span><span class="hours-time">8:00am to 5:00pm</span></div>
+            <div class="hours-row"><span class="hours-day">Wednesday</span><span class="hours-time">8:00am to 5:00pm</span></div>
+            <div class="hours-row"><span class="hours-day">Thursday</span><span class="hours-time">8:00am to 5:00pm</span></div>
+            <div class="hours-row"><span class="hours-day">Friday</span><span class="hours-time">8:00am to 2:00pm</span></div>
+            <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-time">By appointment</span></div>
+            <div class="hours-row"><span class="hours-day">Sunday</span><span class="hours-time closed">Closed</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-title">Send Us a Message</div>
+      <p class="form-sub">Use this form to request an appointment, ask a question, or just reach out. We read every message and respond within one business day.</p>
+      <form action="https://usebasin.com/f/c9396bad8f2e" method="POST">
+      <input type="hidden" name="_subject" value="New Message - Contact Page">
+      <div class="form-grid">
+        <div class="fg"><label>First Name</label><input type="text" name="first_name" placeholder="James" required></div>
+        <div class="fg"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required></div>
+        <div class="fg"><label>Phone Number</label><input type="tel" name="phone" placeholder="(512) 000-0000" required></div>
+        <div class="fg"><label>Email Address</label><input type="email" name="email" placeholder="james@email.com" required></div>
+        <div class="fg full">
+          <label>How Can We Help?</label>
+          <select name="reason">
+            <option value="" disabled selected>Select the reason for your message</option>
+            <option>Request a new patient appointment</option>
+            <option>Verify insurance coverage</option>
+            <option>Ask about a specific service</option>
+            <option>Emergency dental concern</option>
+            <option>Cancel or reschedule appointment</option>
+            <option>General question</option>
+          </select>
+        </div>
+        <div class="fg full"><label>Your Message</label><textarea name="message" placeholder="Tell us what you need and we will get back to you as quickly as possible..."></textarea></div>
+      </div>
+      <button type="submit" class="form-submit">Send My Message</button>
+      </form>
+      <div class="form-note">We respond to all messages within one business day. For urgent dental concerns, please call us directly.</div>
+    </div>
+  </div>
+</section>
+
+<div class="map-section">
+  <div class="map-inner">
+    <div class="map-pin-wrap"><div class="map-pin-dot"></div></div>
+    <div class="map-name">Riverside Family Dentistry</div>
+    <div class="map-addr">4820 Riverside Drive, Suite 200 &nbsp;|&nbsp; Austin, TX 78741<br>Free parking available &nbsp;|&nbsp; Accessible entrance</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin. Now accepting new patients.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="../services/general-dentistry.html">General Dentistry</a></li>
+      <li><a href="../services/cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="../services/dental-implants.html">Dental Implants</a></li>
+      <li><a href="../services/invisalign.html">Invisalign</a></li>
+      <li><a href="../services/emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="../services/childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="../about/">Meet Dr. Mitchell</a></li>
+      <li><a href="../about/">Meet Dr. Carter</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../index.html#insurance">Insurance &amp; Financing</a></li>
+      <li><a href="../index.html#reviews">Patient Reviews</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4410 E. Riverside Drive</li>
+      <li>Suite 200, Austin TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dental Implants | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="Dental implants in Austin, TX. Permanent tooth replacement from Dr. Mitchell and Dr. Carter at Riverside Family Dentistry. Natural-looking results that last decades.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .service-layout { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start; }
+    .service-img { border-radius: 20px; overflow: hidden; height: 380px; margin-bottom: 32px; }
+    .service-img img { width: 100%; height: 100%; object-fit: cover; }
+    .service-body h3 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--blue-dark); margin: 28px 0 12px; }
+    .service-body p { font-size: 0.92rem; color: var(--muted); line-height: 1.78; margin-bottom: 14px; }
+    .service-list { display: flex; flex-direction: column; gap: 10px; margin: 12px 0 20px; }
+    .service-list-item { display: flex; align-items: flex-start; gap: 10px; font-size: 0.9rem; color: var(--muted); line-height: 1.5; }
+    .service-list-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 8px; }
+    .sidebar { display: flex; flex-direction: column; gap: 20px; position: sticky; top: 90px; }
+    .sidebar-card { background: var(--alt); border-radius: 16px; padding: 22px; border: 1px solid var(--border); }
+    .sidebar-card-title { font-family: 'DM Serif Display', serif; font-size: 1.1rem; color: var(--blue-dark); margin-bottom: 10px; }
+    .sidebar-card p { font-size: 0.83rem; color: var(--muted); line-height: 1.65; margin-bottom: 12px; }
+    .sidebar-cta { background: var(--blue-dark); border-radius: 16px; padding: 24px; }
+    .sidebar-cta h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--white); margin-bottom: 8px; }
+    .sidebar-cta p { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-bottom: 16px; line-height: 1.6; }
+    .sidebar-cta .btn-green { width: 100%; text-align: center; display: block; }
+    .sidebar-phone { text-align: center; font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-top: 10px; }
+    .faq-section { background: var(--alt); padding: 72px 5%; }
+    .faq-items { display: flex; flex-direction: column; gap: 16px; max-width: 720px; }
+    .faq-item { background: var(--white); border-radius: 14px; padding: 22px; border: 1px solid var(--border); }
+    .faq-q { font-size: 1rem; font-weight: 700; color: var(--blue-dark); margin-bottom: 8px; }
+    .faq-a { font-size: 0.88rem; color: var(--muted); line-height: 1.68; }
+    .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .related-card { background: var(--white); border-radius: 14px; padding: 20px; border: 1px solid var(--border); }
+    .related-name { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--blue-dark); margin-bottom: 6px; }
+    .related-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.6; margin-bottom: 12px; }
+    .related-link { font-size: 0.8rem; font-weight: 700; color: var(--green); }
+    @media (max-width: 1024px) { .service-layout { grid-template-columns: 1fr; } .sidebar { position: static; } .related-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) { .related-grid { grid-template-columns: 1fr; } }
+  </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">
+  <span><svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm</span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon"><svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg></div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="../about/">About</a>
+    <a href="../services/">Services</a>
+    <a href="../new-patients/">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="../contact/">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb"><a href="../index.html">Home</a> / <a href="index.html">Services</a> / Dental Implants</div>
+  <div class="page-hero-tag">Permanent Tooth Replacement</div>
+  <h1>Dental implants in Austin that look, feel, and function like natural teeth.</h1>
+  <p>Dental implants are the gold standard for replacing missing teeth. They are the only tooth replacement option that actually replaces the root of the tooth, preserving your jawbone and giving you a result that can last a lifetime.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="service-layout">
+    <div class="service-body">
+      <div class="service-img">
+        <img src="../assets/images/Implants_1.jpg" alt="Dental Implants Austin TX Riverside Family Dentistry">
+      </div>
+      <span class="sec-label">Overview</span>
+      <h2 class="sec-h2" style="margin-bottom:16px;">Dental implants in Austin that look, feel, and function like natural teeth.</h2>
+      <p>If you are missing one or more teeth, dental implants offer a solution that no other option can match. Unlike dentures, implants do not slip or require adhesives. Unlike bridges, they do not require grinding down healthy neighboring teeth. An implant is a small titanium post placed in your jawbone that fuses with the bone over time, creating a foundation as strong as a natural tooth root. The crown placed on top is custom-made to match your surrounding teeth in color, shape, and size.</p>
+      <div class="service-list">
+        <div class='service-list-item'>Single tooth implants for individual missing teeth</div><div class='service-list-item'>Implant-supported bridges for multiple adjacent missing teeth</div><div class='service-list-item'>Implant-supported dentures for full arch replacement</div><div class='service-list-item'>Implant crown restoration (we work with your oral surgeon)</div><div class='service-list-item'>Bone grafting evaluation and referral when needed</div><div class='service-list-item'>Full consultation and treatment planning</div>
+      </div>
+      <h3>Am I a candidate for dental implants?</h3>
+      <p>Most healthy adults are candidates for dental implants. The main requirements are adequate bone density in your jaw and healthy gums. Patients with certain health conditions including uncontrolled diabetes or who smoke heavily may need additional evaluation. The only way to know for certain is a comprehensive exam and imaging, which we will do at your consultation.</p>
+    </div>
+    <div class="sidebar">
+      <div class="sidebar-cta">
+        <h3>Ready to get started?</h3>
+        <p>Book an appointment with Dr. Mitchell or Dr. Carter. New patients are welcome and we typically have same-week availability.</p>
+        <a href="../contact/" class="btn-green">Book an Appointment</a>
+        <div class="sidebar-phone">(512) 974-2000</div>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Most Insurance Accepted</div>
+        <p>We accept Delta Dental, Cigna, Aetna, MetLife, Blue Cross Blue Shield, United Healthcare, Humana, and many more. Call us to verify your specific coverage.</p>
+      </div>
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Flexible Payment Options</div>
+        <p>We offer CareCredit and Sunbit financing so you can get the care you need today and pay over time. Our in-house wellness plan starts at Dental Implants9 per month for patients without insurance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-section">
+  <span class="sec-label">Common Questions</span>
+  <h2 class="sec-h2" style="margin-bottom:32px;">Frequently asked questions about Dental Implants.</h2>
+  <div class="faq-items">
+    <div class="faq-item">
+      <div class="faq-q">How long does the implant process take?</div>
+      <p class="faq-a">The full implant process typically takes four to six months from placement to final crown. This is because the implant post needs time to fuse with your jawbone in a process called osseointegration. While this sounds lengthy, most of that time is healing, not treatment. Patients are typically back to normal life within a few days of each procedure.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How much do dental implants cost?</div>
+      <p class="faq-a">The cost of a single implant at Riverside Family Dentistry typically ranges from ,500 to ,500 depending on whether bone grafting is needed and the complexity of the case. We know this is a significant investment, which is why we offer financing through CareCredit and Sunbit. We are happy to break down the exact cost for your specific situation at your consultation.</p>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do dental implants require special care?</div>
+      <p class="faq-a">No special tools or products are needed. You brush and floss implants exactly as you would natural teeth. Regular exams and cleanings are important to monitor the implant and keep the surrounding gum tissue healthy. With proper care, implants can last 20 to 30 years or more.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--white);">
+  <span class="sec-label">Explore More Services</span>
+  <h2 class="sec-h2" style="margin-bottom:32px;">Other services we offer at Riverside.</h2>
+  <div class="related-grid">
+    <div class="related-card">
+      <div class="related-name">General &amp; Family Dentistry</div>
+      <p class="related-desc">Routine exams, cleanings, and preventive care for patients of all ages.</p>
+      <a href="general-dentistry.html" class="related-link">Learn more &#8594;</a>
+    </div>
+    <div class="related-card">
+      <div class="related-name">Cosmetic Dentistry</div>
+      <p class="related-desc">Whitening, veneers, bonding, and complete smile makeovers.</p>
+      <a href="cosmetic-dentistry.html" class="related-link">Learn more &#8594;</a>
+    </div>
+    <div class="related-card">
+      <div class="related-name">Emergency Dental Care</div>
+      <p class="related-desc">Same-day appointments for patients in pain. Call us first.</p>
+      <a href="emergency-dental-care.html" class="related-link">Learn more &#8594;</a>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Questions about Dental Implants?</h2>
+  <p>Call us or book online. Dr. Mitchell and Dr. Carter are happy to answer any questions before your appointment.</p>
+  <div class="cta-band-btns">
+    <a href="../contact/" class="btn-green">Book Your Appointment</a>
+    <a href="tel:5129742000" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">(512) 974-2000</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin. Now accepting new patients.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="general-dentistry.html">General Dentistry</a></li>
+      <li><a href="cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="dental-implants.html">Dental Implants</a></li>
+      <li><a href="invisalign.html">Invisalign</a></li>
+      <li><a href="emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="../about/">Meet Dr. Mitchell</a></li>
+      <li><a href="../about/">Meet Dr. Carter</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../index.html#insurance">Insurance &amp; Financing</a></li>
+      <li><a href="../index.html#reviews">Patient Reviews</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4410 E. Riverside Drive</li>
+      <li>Suite 200, Austin TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>

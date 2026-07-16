@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Doctors | Riverside Family Dentistry | Austin, TX</title>
+  <meta name="description" content="Meet Dr. James Mitchell and Dr. Michael Carter, the dentists behind Riverside Family Dentistry in Austin, TX. Learn about their training, philosophy, and commitment to Austin families.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared.css">
+  <style>
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 64px; }
+    .doc-card { background: var(--white); border-radius: 20px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 2px 16px rgba(44,96,136,0.06); }
+    .doc-img { height: 360px; overflow: hidden; position: relative; }
+    .doc-img img { width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .doc-img-overlay { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(44,96,136,0.88) 0%, transparent 100%); padding: 28px 24px 20px; }
+    .doc-cred { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 4px; }
+    .doc-name { font-family: 'DM Serif Display', serif; font-size: 1.7rem; color: var(--white); line-height: 1.15; }
+    .doc-title { font-size: 0.8rem; color: rgba(255,255,255,0.65); font-weight: 600; margin-top: 3px; }
+    .doc-body { padding: 28px; }
+    .doc-bio { font-size: 0.9rem; color: var(--muted); line-height: 1.78; margin-bottom: 22px; }
+    .doc-section-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--green); margin-bottom: 10px; }
+    .doc-list { display: flex; flex-direction: column; gap: 7px; margin-bottom: 22px; }
+    .doc-list-item { font-size: 0.84rem; color: var(--muted); display: flex; align-items: flex-start; gap: 8px; }
+    .doc-list-item::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--green); flex-shrink: 0; margin-top: 7px; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 8px; }
+    .value-card { background: var(--alt); border-radius: 16px; padding: 24px; border: 1px solid var(--border); text-align: center; }
+    .value-icon { width: 52px; height: 52px; background: var(--blue-lt); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: var(--blue); margin: 0 auto 14px; }
+    .value-title { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: var(--blue-dark); margin-bottom: 8px; }
+    .value-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.65; }
+    .team-section { background: var(--alt); padding: 72px 5%; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .team-card { background: var(--white); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); text-align: center; }
+    .team-img { height: 260px; overflow: hidden; }
+    .team-img img { width: 100%; height: 100%; object-fit: contain; background: #f4f9f6; object-position: center center; }
+    .team-info { padding: 16px; }
+    .team-name { font-family: 'DM Serif Display', serif; font-size: 1rem; color: var(--blue-dark); margin-bottom: 3px; }
+    .team-role { font-size: 0.75rem; color: var(--muted); font-weight: 600; }
+    @media (max-width: 1024px) { .about-grid { grid-template-columns: 1fr; } .values-grid { grid-template-columns: 1fr 1fr; } .team-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 768px) { .values-grid, .team-grid { grid-template-columns: 1fr; } }
+  </style>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='24' fill='%232C6088'/%3E%3Cpath d='M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z' fill='%23FFFFFF'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">
+  <span>
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+    Mon to Thu 8am to 5pm &nbsp;|&nbsp; Fri 8am to 2pm
+  </span>
+  <span>New Patients Welcome &nbsp;|&nbsp; <span class="topbar-phone">(512) 974-2000</span></span>
+</div>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo-wrap" style="text-decoration:none;color:inherit;">
+    <div class="nav-logo-icon">
+      <svg width="20" height="20" viewBox="0 0 120 120"><path d="M25 25C15 45 55 50 50 70C46 88 20 92 30 115L42 115C35 98 58 92 62 72C66 52 30 48 38 28Z" fill="#3A7CA5"/></svg>
+    </div>
+    <div>
+      <div class="nav-logo-name"><a href="../index.html">Riverside Family Dentistry</a></div>
+      <div class="nav-logo-sub">Dr. Mitchell &amp; Dr. Carter</div>
+    </div>
+  </a>
+<div class="nav-links">
+    <a href="index.html" class="active">About</a>
+    <a href="../services/">Services</a>
+    <a href="../new-patients/">New Patients</a>
+    <a href="../index.html#insurance">Insurance</a>
+    <a href="../index.html#reviews">Reviews</a>
+    <a href="../contact/">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:5129742000" class="nav-tel">(512) 974-2000</a>
+    <a href="../contact/" class="nav-book">Book Appointment</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+  </div>
+</nav>
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../about/" onclick="closeMobileNav()">About</a>
+    <a href="../services/" onclick="closeMobileNav()">Services</a>
+    <a href="../new-patients/" onclick="closeMobileNav()">New Patients</a>
+    <a href="../index.html#insurance" onclick="closeMobileNav()">Insurance</a>
+    <a href="../index.html#reviews" onclick="closeMobileNav()">Reviews</a>
+    <a href="../contact/" onclick="closeMobileNav()">Contact</a>
+    <a href="../contact/" class="mobile-nav-book" onclick="closeMobileNav()">Book Appointment</a>
+  </div>
+
+<div class="page-hero">
+  <div class="page-hero-breadcrumb">
+    <a href="../index.html">Home</a> / About Us
+  </div>
+  <div class="page-hero-tag">Meet the Team</div>
+  <h1>Two doctors. One mission.<br>Your family's best smile.</h1>
+  <p>Dr. James Mitchell and Dr. Michael Carter founded Riverside Family Dentistry on a belief that great dental care starts with a genuine relationship between doctor and patient.</p>
+</div>
+
+<section class="section" style="background:var(--white);">
+  <div class="about-grid">
+    <div class="doc-card">
+      <div class="doc-img">
+        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=700&q=80" alt="Dr. James Mitchell DDS Riverside Family Dentistry Austin TX">
+        <div class="doc-img-overlay">
+          <div class="doc-cred">Doctor of Dental Surgery</div>
+          <div class="doc-name">Dr. James Mitchell</div>
+          <div class="doc-title">General &amp; Cosmetic Dentistry</div>
+        </div>
+      </div>
+      <div class="doc-body">
+        <p class="doc-bio">Dr. Mitchell has been practicing dentistry in Austin for over twelve years. After completing his dental training at the University of Texas Health Science Center, he went on to pursue advanced coursework in cosmetic and restorative dentistry. He is known for his calm, patient-first approach and his particular ability to help anxious patients feel at ease from the very first appointment.</p>
+        <p class="doc-bio">Dr. Mitchell grew up in San Antonio and came to Austin for dental school, falling in love with the city and its community. He coaches his son's youth soccer team on weekends and is deeply involved in Austin's community dental health initiatives.</p>
+        <div class="doc-section-title">Education &amp; Training</div>
+        <div class="doc-list">
+          <div class="doc-list-item">University of Texas Health Science Center at San Antonio, DDS</div>
+          <div class="doc-list-item">Academy of General Dentistry, Fellow</div>
+          <div class="doc-list-item">American Academy of Cosmetic Dentistry, Member</div>
+          <div class="doc-list-item">Spear Education, Advanced Cosmetic Training</div>
+          <div class="doc-list-item">Texas State Board of Dental Examiners, Licensed</div>
+        </div>
+        <div class="doc-section-title">Areas of Focus</div>
+        <div class="doc-list">
+          <div class="doc-list-item">Cosmetic dentistry and smile makeovers</div>
+          <div class="doc-list-item">Porcelain veneers and tooth bonding</div>
+          <div class="doc-list-item">Invisalign and clear aligner therapy</div>
+          <div class="doc-list-item">Anxiety-free and sedation dentistry</div>
+        </div>
+      </div>
+    </div>
+    <div class="doc-card">
+      <div class="doc-img">
+        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=700&q=80" alt="Dr. Michael Carter DDS Riverside Family Dentistry Austin TX">
+        <div class="doc-img-overlay">
+          <div class="doc-cred">Doctor of Dental Surgery</div>
+          <div class="doc-name">Dr. Michael Carter</div>
+          <div class="doc-title">Family &amp; Restorative Dentistry</div>
+        </div>
+      </div>
+      <div class="doc-body">
+        <p class="doc-bio">Dr. Carter grew up in Waco and always planned to bring his dental career back to Central Texas. After completing his dental degree at Baylor College of Dentistry, he joined Dr. Mitchell to co-found Riverside Family Dentistry. Dr. Carter has a special passion for working with families and children, including patients who have never been to the dentist before.</p>
+        <p class="doc-bio">Outside the office, Dr. Carter is an avid fly fisherman and hiker. He and his wife have two young children who are, naturally, patients at Riverside. He believes that a practice that treats the whole family builds something that lasts for generations.</p>
+        <div class="doc-section-title">Education &amp; Training</div>
+        <div class="doc-list">
+          <div class="doc-list-item">Baylor College of Dentistry, Dallas, DDS</div>
+          <div class="doc-list-item">Texas Dental Association, Member</div>
+          <div class="doc-list-item">American Dental Association, Member</div>
+          <div class="doc-list-item">American Academy of Pediatric Dentistry, Affiliate Member</div>
+          <div class="doc-list-item">Texas State Board of Dental Examiners, Licensed</div>
+        </div>
+        <div class="doc-section-title">Areas of Focus</div>
+        <div class="doc-list">
+          <div class="doc-list-item">Family and children's dentistry</div>
+          <div class="doc-list-item">Restorative care, crowns, and bridges</div>
+          <div class="doc-list-item">Dental implant restoration</div>
+          <div class="doc-list-item">Preventive care and patient education</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <span class="sec-label">Our Philosophy</span>
+  <h2 class="sec-h2">The values we built this practice on.</h2>
+  <p class="sec-p">Every decision we make, from how we design appointments to how we talk to patients, comes back to these three things.</p>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <div class="value-title">People Before Procedures</div>
+      <p class="value-desc">We treat patients, not just teeth. Understanding who you are and what you need always comes first in our practice.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="value-title">Honesty in Every Recommendation</div>
+      <p class="value-desc">We only recommend treatment you genuinely need. We will always tell you what can wait and what cannot, without any pressure.</p>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      </div>
+      <div class="value-title">Care That Lasts a Lifetime</div>
+      <p class="value-desc">We are building a practice where families come for decades. That long-term relationship shapes every decision we make.</p>
+    </div>
+  </div>
+</section>
+
+<section class="team-section">
+  <span class="sec-label">Our Team</span>
+  <h2 class="sec-h2">The people who make Riverside feel like home.</h2>
+  <p class="sec-p" style="margin-bottom:44px;">Our front desk, hygienists, and assistants have been hand-selected for one thing: genuine warmth toward every patient who walks through our door.</p>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-img">
+        <img src="../assets/images/team_1.jpg" alt="Jennifer L - Lead Dental Hygienist Riverside Family Dentistry">
+      </div>
+      <div class="team-info">
+        <div class="team-name">Jennifer L.</div>
+        <div class="team-role">Lead Dental Hygienist</div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <img src="../assets/images/team_2.jpg" alt="Samantha L - Office Manager Riverside Family Dentistry">
+      </div>
+      <div class="team-info">
+        <div class="team-name">Samantha L.</div>
+        <div class="team-role">Office Manager</div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <img src="../assets/images/team_3.jpg" alt="Sarah K - Dental Assistant Riverside Family Dentistry">
+      </div>
+      <div class="team-info">
+        <div class="team-name">Sarah K.</div>
+        <div class="team-role">Dental Assistant</div>
+      </div>
+    </div>
+    <div class="team-card">
+      <div class="team-img">
+        <img src="../assets/images/team_4.jpg" alt="Ashley M - Patient Coordinator Riverside Family Dentistry">
+      </div>
+      <div class="team-info">
+        <div class="team-name">Ashley M.</div>
+        <div class="team-role">Patient Coordinator</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Ready to meet the team in person?</h2>
+  <p>We would love to welcome you and your family to Riverside. New patient appointments are available this week.</p>
+  <div class="cta-band-btns">
+    <a href="../contact/" class="btn-green">Book Your First Appointment</a>
+    <a href="tel:5129742000" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">(512) 974-2000</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="ft-name">Riverside Family Dentistry</div>
+      <div class="ft-sub">Austin, Texas</div>
+      <p class="ft-tag">Comprehensive family and cosmetic dental care for patients of all ages in South Austin. Now accepting new patients.</p>
+      <div class="ft-phone">(512) 974-2000</div>
+    </div>
+    <div class="ft-col"><h4>Services</h4><ul>
+      <li><a href="../services/general-dentistry.html">General Dentistry</a></li>
+      <li><a href="../services/cosmetic-dentistry.html">Cosmetic Dentistry</a></li>
+      <li><a href="../services/dental-implants.html">Dental Implants</a></li>
+      <li><a href="../services/invisalign.html">Invisalign</a></li>
+      <li><a href="../services/emergency-dental-care.html">Emergency Care</a></li>
+      <li><a href="../services/childrens-dentistry.html">Children's Dentistry</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Practice</h4><ul>
+      <li><a href="index.html">Meet Dr. Mitchell</a></li>
+      <li><a href="index.html">Meet Dr. Carter</a></li>
+      <li><a href="../new-patients/">New Patients</a></li>
+      <li><a href="../index.html#insurance">Insurance &amp; Financing</a></li>
+      <li><a href="../index.html#reviews">Patient Reviews</a></li>
+      <li><a href="../contact/">Contact Us</a></li>
+    </ul></div>
+    <div class="ft-col"><h4>Contact</h4><ul>
+      <li>4410 E. Riverside Drive</li>
+      <li>Suite 200, Austin TX 78741</li>
+      <li>(512) 974-2000</li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span class="ft-copy">2026 Riverside Family Dentistry. All rights reserved.</span>
+    <span class="ft-demo">Demo site created by New Practice Launch</span>
+  </div>
+</footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+    function closeMobileNav() {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+    }
+    window.addEventListener('scroll', () => {
+      if (mobileNav.classList.contains('open')) closeMobileNav();
+    });
+  </script>
+</body>
+</html>
